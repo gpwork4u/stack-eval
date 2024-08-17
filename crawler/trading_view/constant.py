@@ -1,0 +1,28 @@
+
+COLUMN_NAMES = [
+    'name',
+    'description',
+    'logoid',
+    'update_mode',
+    'type',
+    'typespecs',
+    'close',
+    'pricescale',
+    'minmov',
+    'fractional',
+    'minmove2',
+    'currency',
+    'change',
+    'volume',
+    'relative_volume_10d_calc',
+    'market_cap_basic',
+    'fundamental_currency_code',
+    'price_earnings_ttm',
+    'earnings_per_share_diluted_ttm',
+    'earnings_per_share_diluted_yoy_growth_ttm',
+    'dividends_yield_current',
+    'sector.tr',
+    'market',
+    'sector',
+    'recommendation_mark'
+]
