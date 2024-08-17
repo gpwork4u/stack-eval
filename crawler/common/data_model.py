@@ -12,12 +12,14 @@ class financial_report_10k:
     eps: float # 每股盈餘
     dividend: float # 股息
     net_income: float # 淨利
+    # 流動率 = 流動性資產 / 流動性負債
     # 本益比 = 股價 / 每股盈餘
     # 股價淨值比= 收盤價／每股參考淨值
 
 @dataclass
-class stock_price:
+class stock_info:
     company_id: str
     price: float
     volume: float
+    market_cap: float
     timestamp: datetime
