@@ -1,8 +1,10 @@
 import requests
+
+from crawler.common.data_model import StockInfo
 from .constant import COLUMN_NAMES
 from .parser import parse_stock_data
 
-def get_current_stock_data():
+def get_current_stock_data() -> dict[str, StockInfo]:
     url = 'https://scanner.tradingview.com/america/scan'
 
     payload = {
@@ -19,5 +21,6 @@ def get_current_stock_data():
 
     return parse_stock_data(data)
 
-data = get_current_stock_data()
+if __name__ == '__main__':
+    data = get_current_stock_data()
 
